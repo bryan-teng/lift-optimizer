@@ -8,11 +8,12 @@ def generate_boolean_based_on_probability(number_of_results, probability_of_true
     return s[0]
 
 
-def add_lift_transaction_based_on_probability(p, timestamp, start_floor, end_floor, q):
+def add_lift_transaction_based_on_probability(p, timestamp, start_floor, end_floor, qa, qb):
     result = generate_boolean_based_on_probability(1,p)
 
     if result:
-        q.put(LiftRequest(timestamp, start_floor, end_floor))
+        qa.put(LiftRequest(timestamp, start_floor, end_floor))
+        qb.put(LiftRequest(timestamp, start_floor, end_floor))
 
 
 def return_nearest_lift(lift_1, lift_2, current_floor):

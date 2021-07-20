@@ -215,12 +215,12 @@ def simulate(lift_1_default, lift_2_default, lift_3_default, verbose=False):
 
 def main():
 
-    results = simulate(1,7,10, verbose=True)
+    results = simulate(1,5,10, verbose=True)
 
     # print(results)
     # plt.hist([results[1],results[7],results[10]],bins=20,alpha=0.5, label=['1','7','10'])
-    plt.hist(results, bins=20, alpha=0.5, label=['7','10'])
-    plt.title("Simulation for 1000 minutes, Uniform p=0.002") 
+    plt.hist(results, bins=20, alpha=0.5, label=['5','10'])
+    plt.title("Simulation for 1,000 minutes") 
     plt.legend(loc='upper right')
     plt.show()
 

@@ -24,7 +24,7 @@ The Waiting Times determine how efficient the setting is. The Waiting Time is de
 ## Results
 The lift performs more optimally when placed at floors 5, 6, and 7. This makes intuitive sense, and confirms my hypothesis that the current settings are not optimal. 
 
-Referring to the plot of histograms, we can see that the default settings should be updated to any floor other than 10.
+Referring to the plot of histograms, we can see that the default settings should be updated to any floor other than 10. On the x-axis we have the waiting time, and on the y-axis is the number of counts (as per a reguglar histogram).
 
 ![floor7](/assets/floor7.png)
 ![floor6](/assets/floor6.png)
